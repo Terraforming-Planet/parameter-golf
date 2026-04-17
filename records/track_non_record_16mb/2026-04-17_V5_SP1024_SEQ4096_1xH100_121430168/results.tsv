@@ -1,7 +1,2 @@
-run_idtrackgputokenizertrain_seq_leniterationswarmup_stepsval_loss_exactval_bpb_exactbytes_total
-v5_sp1024_top10_anon-record-16mb1xH100sp102440966000302.050297521.2143016815841388
-EOFls /workspace/parameter-golf-v-5/records/track_non_record_16mb/2026-04-17_V5_SP1024_SEQ4096_1xH100_121430168
-cd /workspace/parameter-golf-v-5
-git add .
-git commit -m "Add V5 non-record submission (1.2143 bpb)"
-git push
+run_id	track	gpu	tokenizer	train_seq_len	iterations	warmup_steps	val_loss_exact	val_bpb_exact	bytes_total
+v5_sp1024_top10_a	non-record-16mb	1xH100	sp1024	4096	6000	30	2.05029752	1.21430168	15841388
