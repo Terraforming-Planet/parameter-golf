@@ -19,5 +19,4 @@ It documents a V5 run on the official FineWeb sp1024 path using a longer sequenc
 - `submission.json`
 - `results.tsv`
 - `train_gpt.py`
-- `train.log`
 - `final_model.int8.ptz`
