@@ -10,9 +10,9 @@
   "pre_quant_val_loss": null,
   "pre_quant_val_bpb": null,
   "step_stop": 6000,
-  "wallclock_seconds": 3128,
+  "wallclock_seconds": 3218,
   "bytes_total": 15841388,
-  "bytes_model_int8_zlib": null,
-  "bytes_code": null,
+  "bytes_model_int8_zlib": 15793702,
+  "bytes_code": 47686,
   "gpu": "1xH100"
 }
