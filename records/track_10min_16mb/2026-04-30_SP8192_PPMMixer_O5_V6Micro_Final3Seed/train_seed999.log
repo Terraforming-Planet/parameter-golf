@@ -113,26 +113,26 @@ loop_warmup_step: 5/20
 loop_warmup_step: 6/20
 loop_warmup_step: 10/20
 loop_warmup_step: 20/20
-1/20000 train_loss: 9.0111 train_time: 0.0m tok/s: 4711643
-2/20000 train_loss: 12.3016 train_time: 0.0m tok/s: 5890073
-3/20000 train_loss: 10.9529 train_time: 0.0m tok/s: 6410995
-4/20000 train_loss: 9.4453 train_time: 0.0m tok/s: 6684492
-5/20000 train_loss: 8.2899 train_time: 0.0m tok/s: 6883510
-500/20000 train_loss: 3.3897 train_time: 0.9m tok/s: 7677941
-1000/20000 train_loss: 3.2896 train_time: 1.7m tok/s: 7658702
-1500/20000 train_loss: 3.1932 train_time: 2.6m tok/s: 7661115
-2000/20000 train_loss: 3.0728 train_time: 3.4m tok/s: 7665445
-layer_loop:enabled step:2006 frac:0.350 encoder:[0, 1, 2, 3, 4, 5, 3, 4] decoder:[5, 3, 4, 5, 6, 7, 8, 9, 10]
-2500/20000 train_loss: 3.1215 train_time: 4.7m tok/s: 6953801
-3000/20000 train_loss: 2.8984 train_time: 6.0m tok/s: 6589888
-3500/20000 train_loss: 2.9424 train_time: 7.2m tok/s: 6353123
-4000/20000 train_loss: 2.8197 train_time: 8.5m tok/s: 6187198
-4500/20000 train_loss: 2.8415 train_time: 9.7m tok/s: 6064054
-4530/20000 val_loss: 2.8168 val_bpb: 1.0905
-stopping_early: wallclock_cap train_time: 588109ms step: 4530/20000
+1/20000 train_loss: 9.0111 train_time: 0.0m tok/s: 8221544
+2/20000 train_loss: 12.3016 train_time: 0.0m tok/s: 8128846
+3/20000 train_loss: 10.9530 train_time: 0.0m tok/s: 8028829
+4/20000 train_loss: 9.4453 train_time: 0.0m tok/s: 7972721
+5/20000 train_loss: 8.2898 train_time: 0.0m tok/s: 7942050
+500/20000 train_loss: 3.3832 train_time: 0.9m tok/s: 7702813
+1000/20000 train_loss: 3.2905 train_time: 1.7m tok/s: 7694181
+1500/20000 train_loss: 3.1905 train_time: 2.6m tok/s: 7695725
+2000/20000 train_loss: 3.0710 train_time: 3.4m tok/s: 7697429
+layer_loop:enabled step:2015 frac:0.350 encoder:[0, 1, 2, 3, 4, 5, 3, 4] decoder:[5, 3, 4, 5, 6, 7, 8, 9, 10]
+2500/20000 train_loss: 3.1246 train_time: 4.7m tok/s: 6987193
+3000/20000 train_loss: 2.9047 train_time: 5.9m tok/s: 6620802
+3500/20000 train_loss: 2.9401 train_time: 7.2m tok/s: 6380800
+4000/20000 train_loss: 2.8176 train_time: 8.4m tok/s: 6213661
+4500/20000 train_loss: 2.8403 train_time: 9.7m tok/s: 6089751
+4546/20000 val_loss: 2.8162 val_bpb: 1.0903
+stopping_early: wallclock_cap train_time: 588019ms step: 4546/20000
 peak memory allocated: 39032 MiB reserved: 39060 MiB
 ema:applying EMA weights
-pre-quantization post-ema val_loss:2.81371599 val_bpb:1.08927714 eval_time:6352ms
+pre-quantization post-ema val_loss:2.81304504 val_bpb:1.08901740 eval_time:6425ms
 Serialized model: 134710137 bytes
 Code size: 19602 bytes
 GPTQ:collecting Hessians from calibration data...
@@ -141,17 +141,17 @@ Quantized weights:
   gptq (int6): blocks.attn.c_k.weight, blocks.attn.c_q.weight, blocks.attn.c_v.weight, blocks.attn.proj.weight, blocks.mlp.fc.weight, blocks.mlp.proj.weight
   gptq (int8): tok_emb.weight
   passthrough (float16): blocks.attn.q_gain, blocks.attn_scale, blocks.mlp_scale, blocks.resid_mix, skip_gates, skip_weights
-Serialized model quantized+brotli: 15901201 bytes
-Total submission size quantized+brotli: 15920803 bytes
-quantized val_loss:2.84300400 val_bpb:1.10061544 eval_time:9038ms
-ppm_mixer val_bpb:0.92999574 eval_time:550303ms order=5 H=0.99 L=0.2 T=0.8 N_bytes=40540160
-quantized_sliding_window val_loss:2.79967982 val_bpb:1.08384331 eval_time:654257ms
-[W501 00:21:22.856996560 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
-[W501 00:21:22.862693773 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
-[W501 00:21:22.875520394 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
-[W501 00:21:22.891179861 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
-[W501 00:21:22.918645903 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
-[W501 00:21:22.927423534 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
-[W501 00:21:22.989082876 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
-[W501 00:21:22.017461189 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
-[W501 00:21:24.423531076 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+Serialized model quantized+brotli: 15899692 bytes
+Total submission size quantized+brotli: 15919294 bytes
+quantized val_loss:2.84265687 val_bpb:1.10048106 eval_time:8984ms
+ppm_mixer val_bpb:0.92987519 eval_time:553513ms order=5 H=0.99 L=0.2 T=0.8 N_bytes=40540160
+quantized_sliding_window val_loss:2.79938121 val_bpb:1.08372770 eval_time:657172ms
+[W501 03:06:44.198722685 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W501 03:06:44.200406634 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W501 03:06:44.237823533 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W501 03:06:44.283049847 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W501 03:06:44.283911064 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W501 03:06:44.288133892 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W501 03:06:44.381828355 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W501 03:06:44.383487983 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W501 03:06:47.768174592 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
